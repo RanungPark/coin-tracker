@@ -31,7 +31,7 @@ const Candlestick = ({coinId}:ICandlesticProps) => {
     {
       x: new Date(parseFloat(data.time_close) *1000).toUTCString(),
       y: [data.open, data.high, data.low, data.close]
-    })) || [];
+    })) ?? [];
 
   return (
     <div>
